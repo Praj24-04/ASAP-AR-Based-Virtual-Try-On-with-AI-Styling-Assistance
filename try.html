@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASAP - Virtual Try-On</title>
+    <link rel="stylesheet" href="css/try.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/asapdt.png" alt="ASAP Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="concept.html">Concept</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="try.html" class="btn-try active">Try Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="try-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">EXPERIENCE</h1>
+            <p class="hero-subtitle">Try our products virtually before you buy</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="try-on-container">
+        <div class="container">
+            <!-- Product Selection Section -->
+            <section class="product-selection">
+                <h2 class="section-title">Virtual Try-On</h2>
+                <p class="section-subtitle">Select a product to try it on virtually</p>
+                
+                <div class="product-grid">
+                    <!-- Product Card 1: Sling Bag -->
+                    <div class="product-card" data-product="slingbag">
+                        <div class="product-image">
+                            <img src="images/slingbag.jpg" alt="Premium Sling Bag">
+                            <div class="product-overlay">
+                                <h3>Premium Sling Bag</h3>
+                                <button class="btn-try-ar" data-lens-id="ac074a20-a7cd-4fb9-a0e6-934fec694a55" data-lens-url="https://lens.snap.com/experience/949f33cf-c131-4aeb-ae3e-13e581ffd36a">
+                                    <i class="fas fa-camera"></i> Try On
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: Puffer Vest -->
+                    <div class="product-card" data-product="puffer">
+                        <div class="product-image">
+                            <img src="images/puff.jpg" alt="Urban Puffer Vest">
+                            <div class="product-overlay">
+                                <h3>Urban Puffer Vest</h3>
+                                <button class="btn-try-ar" data-lens-id="733b897f-b3ce-4545-8e49-551328bed15a" data-lens-url="https://lens.snap.com/experience/47c2e879-8071-48a4-ae2f-82fd02a120a0">
+                                    <i class="fas fa-camera"></i> Try On
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: Hoodie -->
+                    <div class="product-card" data-product="hoodie">
+                        <div class="product-image">
+                            <img src="images/hood.jpg" alt="Streetwear Hoodie">
+                            <div class="product-overlay">
+                                <h3>Streetwear Hoodie</h3>
+                                <button class="btn-try-ar" data-lens-id="5c520662-17ac-43de-b901-fe02c05e913c" data-lens-url="https://lens.snap.com/experience/f1cd0d6f-0b02-48ee-8c23-c8616321f2ab">
+                                    <i class="fas fa-camera"></i> Try On
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4: T-Shirt -->
+                    <div class="product-card" data-product="tshirt">
+                        <div class="product-image">
+                            <img src="images/tee.jpg" alt="Classic T-Shirt">
+                            <div class="product-overlay">
+                                <h3>Classic T-Shirt</h3>
+                                <button class="btn-try-ar" data-lens-id="20a599a6-e01e-44a9-b7b4-d4749f8eebb9" data-lens-url="https://lens.snap.com/experience/e0693d02-afc4-4578-a9af-c31056ab1d73">
+                                    <i class="fas fa-camera"></i> Try On
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5: Muffler -->
+                    <div class="product-card" data-product="muffler">
+                        <div class="product-image">
+                            <img src="images/muff.jpg" alt="Winter Muffler">
+                            <div class="product-overlay">
+                                <h3>Winter Muffler</h3>
+                                <button class="btn-try-ar" data-lens-id="TBD" data-lens-url="">
+                                    <i class="fas fa-camera"></i> Try On
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6: Specs -->
+                    <div class="product-card" data-product="specs">
+                        <div class="product-image">
+                            <img src="images/specs.jpg" alt="Designer Specs">
+                            <div class="product-overlay">
+                                <h3>Designer Specs</h3>
+                                <button class="btn-try-ar" data-lens-id="3c5a30e2-7103-409c-9ba5-5e5ea6e7d847" data-lens-url="https://lens.snap.com/experience/5edf2906-638e-4029-a7c5-6fece8189280">
+                                    <i class="fas fa-camera"></i> Try On
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology Showcase Section -->
+            <section class="tech-showcase">
+                <div class="tech-content">
+                    <h2 class="section-title">Powered by Innovation</h2>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                            <h3>Advanced AR Technology</h3>
+                            <p>Our cutting-edge AR technology provides a seamless virtual try-on experience, powered by Snapchat's Lens Studio.</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile-First Design</h3>
+                            <p>Optimized for mobile devices to ensure the best AR experience on your smartphone.</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Secure & Private</h3>
+                            <p>Your privacy is our priority. All AR experiences are secure and don't store any personal data.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AR Instructions Section -->
+            <section class="ar-instructions">
+                <div class="instructions-content">
+                    <h2>How to Try On</h2>
+                    <p class="instructions-subtitle">Follow these simple steps to experience virtual try-on</p>
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Select a Product</h3>
+                                <p>Browse our collection and choose the item you want to try</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Click Try On</h3>
+                                <p>Tap the "Try On" button to launch the AR experience</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Allow Camera Access</h3>
+                                <p>Grant camera permissions when prompted to enable AR</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Position Yourself</h3>
+                                <p>Find a well-lit area and stand with enough space around you</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>Try It On</h3>
+                                <p>See how the item looks on you in real-time</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h3>Capture & Share</h3>
+                                <p>Take photos and share your experience with friends</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructions-cta">
+                        <p>Ready to transform your shopping experience?</p>
+                        <a href="#product-selection" class="btn-try">Start Trying On</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- AR Notification -->
+    <div class="ar-notification" id="ar-notification">
+        <div class="notification-content">
+            <i class="fas fa-camera-retro"></i>
+            <p>Opening AR experience in a new window</p>
+            <div class="notification-progress"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/asapdt.png" alt="ASAP Logo">
+                        <p>Revolutionizing fashion with augmented reality technology</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links-column">
+                            <h3>Team</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="concept.html">Our Concept</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-column">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="term.html">Terms of Use</a></li>
+                                <li><a href="policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-column">
+                            <h3>Connect</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 ASAP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/try.js"></script>
+    
+    <!-- Chatbot Integration -->
+    <script>
+        // Load chatbot styles
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'http://localhost:3000/chatbot-styles.css';
+        link.onerror = function() {
+            console.error('Failed to load chatbot styles');
+        };
+        document.head.appendChild(link);
+        
+        // Load chatbot script with autoOpen parameter set to false
+        const script = document.createElement('script');
+        script.src = 'http://localhost:3000/chatbot-script.js?autoOpen=false';
+        script.onerror = function() {
+            console.error('Failed to load chatbot script');
+        };
+        script.onload = function() {
+            console.log('Chatbot script loaded successfully');
+        };
+        document.body.appendChild(script);
+    </script>
+</body>
+</html>
+

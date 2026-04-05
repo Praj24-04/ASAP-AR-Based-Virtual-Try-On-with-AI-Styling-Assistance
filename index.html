@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASAP - Virtual Try-On Experience</title>
+    <link rel="icon" type="image/png" href="images/asapdt.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/asapdt.png" alt="ASAP Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="concept.html">Concept</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="try.html" class="btn-try">Try Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- First Slide - Hero Section -->
+    <section class="hero" id="hero-slide">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="images/vid.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">EXPERIENCE FASHION LIKE NEVER BEFORE</h1>
+        </div>
+    </section>
+
+    <!-- Second Slide - AR Experience -->
+    <section class="ar-experience" id="ar-slide">
+        <div class="container">
+            <div class="ar-content">
+                <div class="ar-text">
+                    <h2 class="ar-title">REVOLUTIONIZE YOUR SHOPPING EXPERIENCE WITH AR</h2>
+                    <p class="ar-description">
+                        Try clothes virtually before you buy. Our cutting-edge AR technology 
+                        brings the fitting room to your smartphone, making shopping more 
+                        convenient and personalized than ever before.
+                    </p>
+                    <a href="concept.html" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="phone-container">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <video autoplay muted loop playsinline controls>
+                                <source src="images/adi.mp4" type="video/mp4">
+                                <source src="images/adi.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Slide - Top Picks -->
+    <section class="top-picks" id="top-picks-slide">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TOP PICKS</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Try on our most popular items with augmented reality</p>
+            </div>
+            
+            <div class="products-container">
+                <!-- Product 1: Sling Bag -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/slingbag.jpg" alt="Sling Bag">
+                        <div class="product-overlay">
+                            <h3 class="product-title">Premium Sling Bag</h3>
+                            <button class="btn-try-ar" 
+                                   data-lens-id="ac074a20-a7cd-4fb9-a0e6-934fec694a55" 
+                                   data-lens-url="https://lens.snap.com/experience/949f33cf-c131-4aeb-ae3e-13e581ffd36a">
+                                <i class="fas fa-camera"></i> Try with AR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2: Puffer Vest -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/puff.jpg" alt="Puffer Vest">
+                        <div class="product-overlay">
+                            <h3 class="product-title">Urban Puffer Vest</h3>
+                            <button class="btn-try-ar" 
+                                   data-lens-id="733b897f-b3ce-4545-8e49-551328bed15a" 
+                                   data-lens-url="https://lens.snap.com/experience/47c2e879-8071-48a4-ae2f-82fd02a120a0">
+                                <i class="fas fa-camera"></i> Try with AR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3: Hoodie -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/specs.jpg" alt="Hoodie">
+                        <div class="product-overlay">
+                            <h3 class="product-title">Glasses</h3>
+                            <button class="btn-try-ar" 
+                                   data-lens-id="3c5a30e2-7103-409c-9ba5-5e5ea6e7d847" 
+                                   data-lens-url="https://lens.snap.com/experience/5edf2906-638e-4029-a7c5-6fece8189280">
+                                <i class="fas fa-camera"></i> Try with AR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- AR Launch Notification -->
+        <div class="ar-notification" id="ar-notification">
+            <div class="notification-content">
+                <i class="fas fa-camera-retro"></i>
+                <p>Opening AR experience in a new window</p>
+                <div class="notification-progress"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth Slide - Experience -->
+    <section class="experience-slide" id="experience-slide">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <div class="container">
+            <div class="experience-content">
+                <h2 class="experience-title">EXPERIENCE</h2>
+                <a href="try.html" class="btn-try-on">TRY-ON <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/asapdt.png" alt="ASAP Logo">
+                        <p>Revolutionizing fashion with augmented reality technology</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links-column">
+                            <h3>Team</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="concept.html">Our Concept</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-column">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="term.html">Terms of Use</a></li>
+                                <li><a href="policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-column">
+                            <h3>Connect</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 ASAP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <!-- Chatbot Integration -->
+    <script>
+        // Load chatbot styles
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'http://localhost:3000/chatbot-styles.css';
+        link.onerror = function() {
+            console.error('Failed to load chatbot styles');
+        };
+        document.head.appendChild(link);
+        
+        // Load chatbot script with autoOpen parameter set to false
+        const script = document.createElement('script');
+        script.src = 'http://localhost:3000/chatbot-script.js?autoOpen=true';
+        script.onerror = function() {
+            console.error('Failed to load chatbot script');
+        };
+        script.onload = function() {
+            console.log('Chatbot script loaded successfully');
+        };
+        document.body.appendChild(script);
+    </script>
+</body>
+</html>
